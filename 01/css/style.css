@@ -58,6 +58,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 5rem 1fr 1fr 1fr;
+  align-items: center;
 }
 
 .grid img {
@@ -74,7 +75,6 @@ body {
   text-transform: uppercase;
   z-index: 1;
   letter-spacing: -3px;
-  align-self: center;
 }
 
 .grid .short-description {
@@ -93,4 +93,5 @@ body {
   writing-mode: vertical-rl;
   padding-inline-start: 0.8rem;
   transform: rotate(180deg);
+  align-self: flex-end;
 }
