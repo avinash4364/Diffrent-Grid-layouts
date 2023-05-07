@@ -1,1 +1,96 @@
-@import url(chillax.css);
+@import url(nippo.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0ca678;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Nippo-regular', sans-serif;
+  color: #1e2125;
+  line-height: 1;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.887rem 0;
+  align-items: center;
+  overflow: hidden;
+  margin-left: -8rem;
+}
+
+.content p {
+  font-size: 2.827rem;
+  text-transform: uppercase;
+  color: #1e2125;
+  font-family: 'Nippo-bold', sans-serif;
+}
+
+.content p:nth-child(odd) {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #1e2125;
+}
+
+.content box-icon {
+  fill: #fff;
+}
+
+.connect box-icon {
+  fill: black;
+}
+
+.works {
+  background-color: #4e149f;
+}
+
+.connect {
+  background-color: #f5bfbb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 5rem 1fr 1fr 1fr;
+}
+
+.grid img {
+  width: 100%;
+  grid-row: 3 / 5;
+  grid-column: 7/9;
+  filter: contrast(50%);
+}
+
+.grid .main-heading {
+  font-size: 2.827rem;
+  grid-column: 3 / 11;
+  grid-row: 2/4;
+  text-transform: uppercase;
+  z-index: 1;
+  letter-spacing: -3px;
+  align-self: center;
+}
+
+.grid .short-description {
+  grid-row: 4;
+  grid-column: 4 / span 2;
+  line-height: 1.1;
+  margin-left: -4rem;
+}
+
+.grid .me {
+  grid-column: 9;
+  grid-row: 4;
+  padding-block-start: 0.8rem;
+  text-transform: uppercase;
+  font-size: 0.707rem;
+  writing-mode: vertical-rl;
+  padding-inline-start: 0.8rem;
+  transform: rotate(180deg);
+}
