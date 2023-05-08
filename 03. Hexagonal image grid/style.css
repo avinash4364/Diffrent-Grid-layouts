@@ -17,11 +17,13 @@ body {
   line-height: 1;
   background-color: #e9ecef;
   color: #333;
+  min-height: 100vh;
 }
 
 header {
   text-align: center;
   padding: 4.8rem;
+  padding-bottom: 9.6rem;
 }
 
 h1 {
@@ -30,15 +32,16 @@ h1 {
   text-transform: uppercase;
 }
 
-.grid {
-  max-width: 128rem;
-  margin: 0 auto;
-}
-
 img {
   width: 40rem;
   height: 40rem;
   object-fit: cover;
+}
+
+.grid {
+  max-width: 123rem;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .grid-item {
