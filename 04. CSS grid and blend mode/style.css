@@ -22,10 +22,12 @@ section {
   left: 0;
   width: 100%;
   background: white;
+  /* the foreground and background color will blend and the final color will be lighter of the two */
   mix-blend-mode: lighten;
 }
 
 .container div {
+  /* here black is necessary as it is the darkest color so the blend mode will not choose this and choose the image to be displayed which is in the background*/
   background-color: black;
   height: 59.6rem;
 }
