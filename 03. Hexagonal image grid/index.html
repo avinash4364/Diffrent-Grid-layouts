@@ -4,81 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Hexogonal Image Grid</title>
   </head>
   <body>
-    <div class="container">
-      <div class="grid">
-        <div class="img">
-          Photo by
-          <a
-            href="https://unsplash.com/es/@nickkarvounis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Nick Karvounis</a
-          ><img
-            src="img/nick-karvounis--KNNQqX9rqY-unsplash.jpg"
-            alt="tiger sitting on rock"
-          />
+    <header>
+      <h1>A hexagonal Grid of images</h1>
+    </header>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="text-box">
+          <p class="img-title">Tiger</p>
+          <p class="photographer">
+            Photo by<a
+              href="https://unsplash.com/es/@nickkarvounis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Nick Karvounis</a
+            >
+          </p>
         </div>
-        <div class="img">
-          Photo by
-          <a
-            href="https://unsplash.com/@hansjurgen007?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Hans-Jurgen Mager</a
-          ><img
-            src="img/hans-jurgen-mager-qQWV91TTBrE-unsplash.jpg"
-            alt="polar bear waving hand"
-          />
+
+        <img
+          src="img/nick-karvounis--KNNQqX9rqY-unsplash.jpg"
+          alt="tiger sitting on rock"
+        />
+      </div>
+      <div class="grid-item">
+        <div class="text-box">
+          <p class="img-title">Polar bear</p>
+          <p class="photographer">
+            Photo by
+            <a
+              href="https://unsplash.com/@hansjurgen007?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Hans-Jurgen Mager</a
+            >
+          </p>
         </div>
-        <div class="img">
-          Photo by
-          <a
-            href="https://unsplash.com/@coopery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Mohamed Nohassi</a
-          ><img
-            src="img/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg"
-            alt="man standing with open arms in the middle of ocean"
-          />
+        <img
+          src="img/hans-jurgen-mager-qQWV91TTBrE-unsplash.jpg"
+          alt="polar bear waving hand"
+        />
+      </div>
+      <div class="grid-item">
+        <div class="text-box">
+          <p class="img-title">ocean</p>
+          <p class="photographer">
+            Photo by
+            <a
+              href="https://unsplash.com/@coopery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Mohamed Nohassi</a
+            >
+          </p>
         </div>
-        <div class="img">
-          Photo by
-          <a
-            href="https://unsplash.com/@timswaanphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Tim Swaan</a
-          ><img
-            src="img/tim-swaan-eOpewngf68w-unsplash.jpg"
-            alt="beautiful wooden bridge in the forest"
-          />
+        <img
+          src="img/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg"
+          alt="man standing with open arms on an islet"
+        />
+      </div>
+      <div class="grid-item">
+        <div class="text-box">
+          <p class="img-title">wooden bridge</p>
+          <p class="photographer">
+            Photo by
+            <a
+              href="https://unsplash.com/@timswaanphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Tim Swaan</a
+            >
+          </p>
         </div>
-        <div class="img">
-          Photo by
-          <a
-            href="https://unsplash.com/@szmigieldesign?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Lukasz Szmigiel</a
-          ><img
-            src="img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg"
-            alt="forest full of life"
-          />
+        <img
+          src="img/tim-swaan-eOpewngf68w-unsplash.jpg"
+          alt="beautiful wooden bridge in the forest"
+        />
+      </div>
+      <div class="grid-item">
+        <div class="text-box">
+          <p class="img-title">forest</p>
+          <p class="photographer">
+            Photo by
+            <a
+              href="https://unsplash.com/@szmigieldesign?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Lukasz Szmigiel</a
+            >
+          </p>
         </div>
-        <div class="img">
-          Photo by
-          <a
-            href="https://unsplash.com/@hellocolor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Pawel Nolbert</a
-          ><img
-            src="img/pawel-nolbert-62OK9xwVA0c-unsplash.jpg"
-            alt="rocky mountains with purply sky"
-          />
+        <img
+          src="img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg"
+          alt="forest full of life"
+        />
+      </div>
+      <div class="grid-item">
+        <div class="text-box">
+          <p class="img-title">rocky mountains</p>
+          <p class="photographer">
+            Photo by
+            <a
+              href="https://unsplash.com/@hellocolor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Pawel Nolbert</a
+            >
+          </p>
         </div>
-        <div class="img">
-          Photo by
-          <a
-            href="https://unsplash.com/@timothyeberly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Timothy Eberly</a
-          ><img
-            src="img/timothy-eberly-LHm2nLdtC9g-unsplash.jpg"
-            alt="road full of snowy in the forest"
-          />
+        <img
+          src="img/pawel-nolbert-62OK9xwVA0c-unsplash.jpg"
+          alt="rocky mountains with purply sky"
+        />
+      </div>
+      <div class="grid-item">
+        <div class="text-box">
+          <p class="img-title">snowy roads</p>
+          <p class="photographer">
+            Photo by
+            <a
+              href="https://unsplash.com/@timothyeberly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Timothy Eberly</a
+            >
+          </p>
         </div>
+        <img
+          src="img/timothy-eberly-LHm2nLdtC9g-unsplash.jpg"
+          alt="road full of snowy in the forest"
+        />
       </div>
     </div>
   </body>

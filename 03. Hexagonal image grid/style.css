@@ -1,0 +1,134 @@
+/* hexagonal grid of images using float */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  background-color: #e9ecef;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 4.8rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.grid {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.grid-item {
+  position: relative;
+  float: left;
+  margin-top: -9rem;
+  /* clip path is used to give hexagon shape to each images */
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  /* here the element around grid item will wrap in such a polygon shape not when a rectangular box. */
+  shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  overflow: hidden;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.grid-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(128, 0, 128, 0.25);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(6) {
+  margin-left: 21rem;
+}
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(2) {
+  margin-top: 0;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1;
+  width: 100%;
+  transition: all 0.3s;
+  /* temp */
+  color: #fff;
+}
+
+.img-title {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.img-title::before,
+.img-title::after {
+  content: '';
+  display: block;
+  width: 2.4rem;
+  height: 1px;
+  background-color: turquoise;
+}
+
+.text-box a {
+  text-decoration: none;
+  color: #40e0d0;
+}
+
+.photographer {
+  font-size: 1.2rem;
+  color: turquoise;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.grid-item:hover::before {
+  opacity: 1;
+}
+
+.grid-item:hover .text-box {
+  transform: translate(-50%, -50%) scale(1);
+}
