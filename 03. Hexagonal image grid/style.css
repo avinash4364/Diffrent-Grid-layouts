@@ -36,6 +36,7 @@ img {
   width: 40rem;
   height: 40rem;
   object-fit: cover;
+  transition: all 0.3s;
 }
 
 .grid {
@@ -132,6 +133,10 @@ img {
   opacity: 1;
 }
 
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
 .grid-item:hover .text-box {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1.1);
 }
